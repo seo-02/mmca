@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국립현대미술관</title>
+    <link rel="shortcut icon" href="./image/logo_mini.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eiu1qlh.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/function.js"></script>
+</head>
+<body>
+    <div id="wrap"> 
+        <header>
+            <h1 class="logo"><a href="#">mmca 국립현대미술관</a></h1>
+            <div class="subnav">
+                <p class="join"><a href="#">MMCA<br />회원가입</a></p>
+                <p class="login"><a href="#">로그인</a></p>
+                <p class="langu">
+                    LANGUAGES : 
+                    <label for="LANGUAGES">언어</label>
+                    <select name="LANGUAGES" id="LANGUAGES">
+                        <option value="">한국어</option>
+                        <option value="">ENGLISH</option>
+                        <option value="">中文</option>
+                        <option value="">日本語</option>
+                    </select>
+                </p>
+                <p class="move"><a href="#">이동</a></p>
+            </div>
+            <div class="gnb-bg">gnb배경</div>
+            <nav class="mainGnb">
+                <ul class="gnb">
+                    <li><a href="#">관람·참여</a>
+                        <div class="lnbBG">
+                            <ul class="lnb">
+                                <li><a href="#">서울</a></li>
+                                <li><a href="#">과천</a></li>
+                                <li><a href="#">덕수궁</a></li>
+                                <li><a href="#">청주</a></li>
+                                <li><a href="#">어린이미술관</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">통합예약</a></li>
+                                <li><a href="#">전시해설</a></li>
+                                <li><a href="#">레지던시</a></li>
+                                <li><a href="#">미술은행</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#">전시</a>
+                        <div class="lnbBG">
+                            <ul class="lnb">
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">과거전시</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#">교육</a>
+                        <div class="lnbBG">
+                            <ul class="lnb">
+                                <li><a href="#">미술관교육소개</a></li>
+                                <li><a href="#">어린이</a></li>
+                                <li><a href="#">청소년</a></li>
+                                <li><a href="#">교사</a></li>
+                                <li><a href="#">성인</a></li>
+                                <li><a href="#">교육자료실</a></li>
+                                <li><a href="#">참여신청</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#">소장품</a>
+                        <div class="lnbBG">
+                            <ul class="lnb">
+                                <li><a href="#">소장품 검색</a></li>
+                                <li><a href="#">소장품 탐색</a></li>
+                                <li><a href="#">보존과학</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="#">미술연구</a>    
+                        <div class="lnbBG">                    
+                            <ul class="lnb">
+                                <li><a href="#">도서와 아카이브</a></li>
+                                <li><a href="#">연구</a></li>
+                                <li><a href="#">발간자료</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">디지털미술관</a>
+                        <div class="lnbBG">
+                            <ul class="lnb">
+                                <li><a href="#">메인</a></li>
+                                <li><a href="#">오디오가이드</a></li>
+                                <li><a href="#">이용자갤러리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search">
+                <p><a href="#">search</a></p>
+                <div>
+                    <input placeholder="검색어를 입력하세요" type="text" id="search" name="search">
+                    <button>검색</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="reservation">
+            <h2 class="sr-only">전국 국립현대미술관</h2>
+            <div class="rsvs">
+                <p>국립현대미술관 관람 예약 바로가기<br /></p>
+                <p>화요일-일요일 10:00-18:00 (월요일 서울 개관)<br />
+                    서울·덕수궁:수요일, 토요일 야간개장 10:00-21:00
+                </p>
+                <button class="tourR">전시 관람 예약하기</button>
+                <button class="diR">디지털 정보실 예약하기</button>
+                <p class="rsvsRM"><a href="#">remove</a></p>
+            </div>
+        </section>
+        
+        <section class="visual">
+            <h2 class="sr-only">청주 MMCA 국제미술 소장품 기획전 미술로, 세계로</h2>
+            <div>
+                <a href="#">
+                    <div class="CJmmca">
+                        <p>첫번째</p>
+                        <p>두번째</p>
+                        <p>세번째</p>
+                        <p>네번째</p>
+                    </div>
+                    <p class="visual_ct">[청주] MMCA 국제미술 소장품 기획전<i>≪</i>미술로, 세계로<i>≫</i> <br />
+                        <span>2022.01.20 ~ 2022.06.12</span>
+                    </p>
+                </a>
+                <button>전시 관람 예약하기</button>
+            </div>
+        </section>
+
+        <section class="AG">
+            <h2>미술관</h2>
+            <ul>
+                <li><p class="Aimg"><a href="#">서울관 외관</a></p>
+                    <ol>
+                        <li>서울</li>
+                        <li>월요일,화요일,목요일,금요일,일요일 10:00–18:00<br />
+                            수요일, 토요일 야간개장 10:00–21:00</li>
+                        <li class="hashtag">
+                            <p><a href="#">전시</a></p>
+                            <p><a href="#">필름앤비디오</a></p>
+                            <p><a href="#">다원예술</a></p>
+                            <p><a href="#">교육</a></p>
+                            <p><a href="#">이벤트</a></p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li><p class="Aimg"><a href="#">과천관 외관</a></p>
+                    <ol>
+                        <li>과천</li>
+                        <li>화요일–일요일(월요일 휴관), 10:00–18:00</li>
+                        <li class="hashtag">
+                            <p><a href="#">전시</a></p>
+                            <p><a href="#">교육</a></p>
+                            <p><a href="#">어린이미술관</a></p>
+                            <p><a href="#">이벤트</a></p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li><p class="Aimg"><a href="#">덕수궁관 외관</a></p>
+                    <ol>
+                        <li>덕수궁</li>
+                        <li>오늘은 휴관일 입니다.</li>
+                        <li class="hashtag">
+                            <p><a href="#">전시</a></p>
+                        </li>
+                    </ol>
+                </li>
+
+                <li><p class="Aimg"><a href="#">청주관 외관</a></p>
+                    <ol>
+                        <li>청주</li>
+                        <li>화요일–일요일(월요일 휴관), 10:00–18:00</li>
+                        <li class="hashtag">
+                            <p><a href="#">전시</a></p>
+                            <p><a href="#">이벤트</a></p>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <section class="EXH">
+            <h2>전시</h2>
+            <ul class="exhnav">
+                <li class="on"><a href="#">전체</a>
+                    <div class="exhlist_1">
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="cjmmca">포스터</p>
+                                <p>청주</p>
+                                <p>MMAC 국제미술 소장품 기획전<br /> <span>≪</span>미술로, 세계로<span>≫</span></p>
+                                <p>2022-01-20~2022-06-12</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="gcmmac">포스터</p>
+                                <p>과천</p>
+                                <p>MMAC 과천프로젝트 2021: <br />예술버스쉼터_쓸모없는 건축과 유용한 조각에 대하여</p>
+                                <p>2021-12-15~2022-11-20</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="seeye">포스터</p>
+                                <p>서울</p>
+                                <p>아이 웨이웨이</p>
+                                <p>2021-12-11~2022-04-17</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="gccg">포스터</p>
+                                <p>과천</p>
+                                <p>원형정원 프로젝트: 달뿌리-느리고 빠른 대화</p>
+                                <p>2021-10-08~2023-12-17</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="cj2021">포스터</p>
+                                <p>청주</p>
+                                <p>MMAC 청주프로젝트 2021<br /> <span>≪</span>천대광: 집우집주<span>≫</span></p>
+                                <p>2021-09-17~2022-07-24</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="selgh">포스터</p>
+                                <p>서울</p>
+                                <p>MMCA 이건희컬렉션 특별전:<br /> 한국미술명작</p>
+                                <p>2021-07-21~2022-04-13</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="childa">포스터</p>
+                                <p>어린이미술관</p>
+                                <p>너랑나랑___</p>
+                                <p>2021-05-04~2022-12-11</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="cjos">포스터</p>
+                                <p>청주</p>
+                                <p>개방 수장고 개편</p>
+                                <p>2020-12-03~2026-12-31</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">서울</a>
+                    <div class="exhlist_1">
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="seeye">포스터</p>
+                                <p>서울</p>
+                                <p>아이 웨이웨이</p>
+                                <p>2021-12-11~2022-04-17</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="selgh">포스터</p>
+                                <p>서울</p>
+                                <p>MMCA 이건희컬렉션 특별전: <br />한국미술명작</p>
+                                <p>2021-07-21~2022-04-13</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">과천</a>
+                    <div class="exhlist_1">
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="gcmmac">포스터</p>
+                                <p>과천</p>
+                                <p>MMAC 과천프로젝트 2021: <br />예술버스쉼터_쓸모없는 건축과 유용한 조각에 대하여</p>
+                                <p>2021-12-15~2022-11-20</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="gccg">포스터</p>
+                                <p>과천</p>
+                                <p>원형정원 프로젝트: 달뿌리-느리고 빠른 대화</p>
+                                <p>2021-10-08~2023-12-17</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="aitt">포스터</p>
+                                <p>과천</p>
+                                <p>시대를 보는 눈: 한국근현대미술</p>
+                                <p>2020-07-21~2022-07-31</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">덕수궁</a></li>
+                <li><a href="#">청주</a>
+                    <div class="exhlist_1">
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="cjmmca">포스터</p>
+                                <p>청주</p>
+                                <p>MMAC 국제미술 소장품 기획전<br /> <span>≪</span>미술로, 세계로<span>≫</span></p>
+                                <p>2022-01-20~2022-06-12</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="cj2021">포스터</p>
+                                <p>청주</p>
+                                <p>MMAC 청주프로젝트 2021<br /> <span>≪</span>천대광: 집우집주<span>≫</span></p>
+                                <p>2021-09-17~2022-07-24</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="cjss">포스터</p>
+                                <p>청주</p>
+                                <p>2020-2021 특별수장고<br /> <span>≪</span>국립현대미술관 드로잉 소장품<span>≫</span></p>
+                                <p>2020-12-01~2026-09-30</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="kmcb">포스터</p>
+                                <p>청주</p>
+                                <p>MMAC 청주프로젝트 2020<br /> <span>≪</span>권민호: 회색숨<span>≫</span></p>
+                                <p>2020-10-29~2022-06-12</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">어린이미술관</a>
+                    <div class="exhlist_1">
+                        <div class="exhlist_2">
+                            <a href="#">
+                                <p class="childa">포스터</p>
+                                <p>어린이미술관</p>
+                                <p>너랑나랑___</p>
+                                <p>2021-05-04~2022-12-11</p>
+                                <p>오디오가이드</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <p class="prev"><a href="#">prev</a></p>
+            <p class="next"><a href="#">next</a></p>
+            <p class="allV"><a href="#">모두 보기  ></a></p>
+        </section>
+
+        <section class="COLT">
+            <h2>소장품</h2>
+            <div class="COLTall">
+                <div class="COLTslide">
+                    <div class="COLTeach">
+                        <a href="#">
+                            <p>작품사진</p>
+                            <p>국립현대미술관 소장품300</p>
+                            <p>1910년대~1920년대</p>
+                        </a>
+                    </div>
+                    <div class="COLTeach">
+                        <a href="#">
+                            <p>작품사진</p>
+                            <p>국립현대미술관 소장품300</p>
+                            <p>1930년대~1940년대</p>
+                        </a>
+                    </div>
+                    <div class="COLTeach">
+                        <a href="#">
+                            <p>작품사진</p>
+                            <p>국립현대미술관 소장품300</p>
+                            <p>1950년대~1960년대</p>
+                        </a>
+                    </div>
+                    <div class="COLTeach">
+                        <a href="#">
+                            <p>작품사진</p>
+                            <p>국립현대미술관 소장품300</p>
+                            <p>1970년대~1980년대</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="prev"><a href="#">prev</a></p>
+            <p class="next"><a href="#">next</a></p>
+            <p class="allV"><a href="#">모두 보기  ></a></p>
+        </section>
+
+
+        <section class="DG">
+            <h2>디지털미술관</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p>
+                                <iframe width="500" height="285" src="https://www.youtube.com/embed/QohdIEEmnCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </p>
+                            <p>MMCA TV</p>
+                            <p><span>≪</span>대지의 시간<span>≫</span> VR 포스트 시노그래피: <br />가상투영입자</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p>
+                                <iframe width="500" height="285" src="https://www.youtube.com/embed/768CBI_5m4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </p>
+                            <p>MMCA TV</p>
+                            <p><span>≪</span>대지의 시간<span>≫</span> 참여작가 인터뷰 - 김주리</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p>영상</p>
+                            <p>MMCA TV</p>
+                            <p>[오늘, 이 작품] 베르나르트<br />슐체 | 오펠리아 | 1985</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <p class="allV"><a href="#">모두 보기  ></a></p>
+        </section>
+
+        <section class="artbank">
+            <h2 class="sr-only">작품구입공모</h2>
+            <p><a href="#">2022 국립현대미술관 미술은행.정부미술은행 작품 구입 공모 접수시작:3.25(금) 9:00 접수마감:4.5(화)18:00</a></p>
+        </section>
+
+        <section class="newsletter">
+            <h2>MMCA뉴스레터</h2>
+            <div class="nlslide">
+                <ul>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <p>사진</p>
+                                <p>전시포커스</p>
+                                <p>2022 뉴페이스! 고양레지던시 입주 작가들</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <p>사진</p>
+                                <p>미술관 플러스</p>
+                                <p>당신의 취향을 저격하는 미술관 홈페이지, 이용법은?</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <p>사진</p>
+                                <p>미술관 플러스</p>
+                                <p>&lt;올해의 작가상 2021&gt; 최찬숙 작가 수상</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#">
+                                <p>사진</p>
+                                <p>미술관 플러스</p>
+                                <p>&lt;MMCA 과천프로젝트 2022: 옥상정원&gt; 최종 당선작은?</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="prev"><a href="#">prev</a></p>
+            <p class="next"><a href="#">next</a></p>
+        </section>
+
+        <section class="Amore">
+            <h2 class="sr-only">추가</h2>
+            <ul>
+                <li>
+                    <p><a href="#">미술은행사진</a></p>
+                    <p>미술은행</p>
+                    <p><a href="#">더 알아보기</a></p>
+                </li>
+                <li>
+                    <p><a href="#">레지던시사진</a></p>
+                    <p>레지던시</p>
+                    <p><a href="#">더 알아보기</a></p>
+                </li>
+                <li>
+                    <p><a href="#">도서와 아카이브 사진</a></p>
+                    <p>도서와 아카이브</p>
+                    <p><a href="#">더 알아보기</a></p>
+                </li>
+                <li>
+                    <p><a href="#">어린이미술관사진</a></p>
+                    <p>어린이미술관</p>
+                    <p><a href="#">더 알아보기</a></p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="NEW">
+            <h2>새소식</h2>
+            <ul>
+                <li><a href="#">타일러와 함께하는 제1기 국립현대미술관 서포터즈 #helloMMCA 모집 공고</a></li>
+                <li><a href="#">국립현대미술관 소식지 8호 표지촬영 안내</a></li>
+                <li><a href="#">국립현대미술관 등록미술관 보존지원 사업 공모</a></li>
+            </ul>
+            <p class="allV"><a href="#">모두 보기  ></a></p>
+        </section>
+
+        <footer>
+            <div class="footer_top">
+                <ul class="left">
+                    <li>
+                        <label for="news">MMCA 뉴스레터 구독 신청</label><br />
+                        <input type="text" id="news" name="news" placeholder="이메일 주소를 입력하세요" />
+                        <button>구독하기</button>
+                    </li>
+                    <li><a href="#">MMCA 뉴스레터</a></li>
+                    <li><a href="#">소식지</a></li>
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">온라인숍</a></li>
+                </ul>
+                <ul class="right">
+                    <li class="sns">
+                        <ol>
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터</a></li>
+                            <li><a href="#">네이버</a></li>
+                        </ol>
+                    </li>
+                    <li class="use">
+                        <ol>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">저작권정책</a></li>
+                            <li><a href="#">국민신문고</a></li>
+                            <li><a href="#">정보공개</a></li>
+                            <li><a href="#">불편부조리신고</a></li>
+                        </ol>
+                    </li>
+                    <li class="info">
+                        <ol>
+                            <li><a href="#">미술관 소개</a></li>
+                            <li><a href="#">새소식</a></li>
+                            <li><a href="#">채용</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">후원</a></li>
+                            <li><a href="#">MMCA프렌즈</a></li>
+                            <li><a href="#">자원봉사</a></li>
+                            <li><a href="#">시설대관·복제신청</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">국립현대미술관 문화재단</a></li>
+                        </ol>
+                    </li>
+                </ul>
+
+            </div>
+
+            <address>
+                대표자: 윤범모, 사업자등록번호: 138‒83‒00313<br />
+                대표전화: (서울) 02‒3701‒9500, (과천) 02‒2188‒6000, (덕수궁) 02‒2022‒0600, (청주) 043‒261‒1400<br />
+                © 2021 National Museum of Modern and Contemporary Art, Korea
+            </address>
+            
+        </footer>
+
+        <aside class="footer_btm">
+            <a href="#">새정부에게 바란다! 국민참여예산 지금 바로 제안하세요~ 집중 접수 기간:3월 15일 ~ 5월 10일(새창 열기)</a>
+        </aside>
+
+        <aside class="sidebar">
+            <p class="smartSC"><a href="#">스마트<br/>검색</a></p>
+            <p class="scrolltop"><a href="#">scrollTop</a></p>
+        </aside>
+    </div>
+</body>
+</html>
